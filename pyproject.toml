@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+
+[tool.pylint.messages_control]
+disable = [
+    "C0114", # Zezwala na brak docstringa na samej górze pliku
+]
+
+[tool.pylint.format]
+max-line-length = 88
